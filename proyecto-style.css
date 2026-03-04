@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;    
+}
+
+.titulo h1 {
+    margin: 0;
+}
+.titulo img {
+    margin: 0;
+}
+header{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(255, 0, 166); 
+}
+.titulo{
+    height: 200px;
+    width:  70%;
+    background-color: rgb(76, 236, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu{
+    height: 100px;
+    width: 70%;
+    background-color: rgb(0, 0, 0);
+
+}
+.letrastitulo{
+    
+    font-family: "Fugaz One", sans-serif;
+    font-size: 70px;
+    margin-left: 45px;
+}
+.escudofuen{
+    margin-left: 40px;
+    width:125px ;
+    height:125px;
+}
+
+
+
+.caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  
+}
+nav a {
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 5px;
+  border-right: 1px solid #336699;
+  display: block;
+  height: 100%;
+  
+}
+nav a:hover{
+  background-color: #336699;
+}
