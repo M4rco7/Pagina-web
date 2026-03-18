@@ -91,3 +91,26 @@ nav a:hover{
   background-color: #31c218;
   width: 100%;
 }
+.contenedor {
+    position: relative;
+    width: 580.75px;
+    margin: 25px;
+    display: inline-block;
+}
+
+.contenedor img {
+    width: 100%;
+    display: block;
+}
+
+.img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.contenedor:hover .img2 {
+    opacity: 1;
+}
