@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario.-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <header>
+    <div class="caja">
+        <div class="titulo">
+        <img src="../img/escudofuensaldana.png" alt="escudofuen" class="escudofuen"/>
+        <h1 class="letrastitulo">FUENSALDAÑA FS</h1>
+        </div>
+        <div class="menu">
+            <nav>
+        <ul>
+            <li><a href="proyecto.html">Inicio</a></li>
+            <li><a href="plantilla.html">Plantilla</a></li>
+            <li><a href="formulario.html">Inscribirse</a></li>
+        </ul>
+    </nav> 
+        </div>
+    </div>
+ </header>
+<main>
+  <main class="main-inscripcion">
+    <div class="formulario-container">
+        <h1 class="titulo-formulario">INSCRIPCIONES FUENSALDAÑA FS 25/26</h1>
+        <p class="subtitulo-formulario">
+            Completa este formulario si no puedes realizar la inscripción presencialmente.<br>
+            La información será utilizada solo para fines de organización.
+        </p>
+
+        <div class="formulario-fs">
+            <div class="campo-formulario">
+                <label for="nombre_completo">Nombre completo del interesado/a en inscribirse *</label>
+                <input type="text" id="nombre_completo" name="nombre_completo">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="tutor">Nombre de Padre/Madre/Tutor legal <span class="opcional">(Solo necesario si el interesado es menor de edad)</span></label>
+                <input type="text" id="tutor" name="tutor">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="fecha_nacimiento">Fecha de nacimiento del interesado/a *</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="categoria">Categoría *</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Selecciona una categoría</option>
+                    <option value="Prebenjamín">Prebenjamín</option>
+                    <option value="Benjamín">Benjamín</option>
+                    <option value="Alevín">Alevín</option>
+                    <option value="Infantil">Infantil</option>
+                    <option value="Cadete">Cadete</option>
+                    <option value="Juvenil">Juvenil</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label>¿Formaba parte ya del equipo? *</label>
+                <div class="opciones-radio">
+                    <label class="radio-label">
+                        <input type="radio" name="equipo_previo" value="Sí"> Sí
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="equipo_previo" value="No"> No
+                    </label>
+                </div>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="telefono">Teléfono de contacto y nombre *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678 - María García">
+            </div>
+
+            <div class="botones-formulario">
+                <button class="btn-submit" type="button">Enviar inscripción</button>
+            </div>
+        </div>
+        <p class="aviso-formulario">* Campos obligatorios</p>
+    </div>
+</main>
+</main>
+ <footer>
+    <img src="../img/escudofuensaldana.png" alt="escudofuen" class="escudofuenfooter"/> 
+    <p>Copyright © 2026 Fuensaldaña FS. Todos los derechos reservados.</p>
+    
+      <a href="https://www.instagram.com/fuensaldanafs/" target="_blank">
+        <img src="../img/ig-logo.png" alt="iglogo" class="iglogo"/>
+    </a>
+</footer>   
+</body>
+</html>

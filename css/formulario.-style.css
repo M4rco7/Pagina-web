@@ -1,0 +1,278 @@
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);    
+}
+
+.titulo h1 {
+    margin: 0;
+}
+
+.titulo img {
+    margin: 0;
+}
+
+header{
+    height: 300px;
+    width: 100%;
+}
+
+.titulo{
+    height: 200px;
+    width: 100%;
+    background-color: #65f884;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    height: 100px;
+    width: 100%;
+}
+
+.letrastitulo{
+    font-family: "Fugaz One", sans-serif;
+    font-size: 70px;
+    margin-left: 45px;
+}
+
+.escudofuen{
+    margin-left: 40px;
+    width:125px ;
+    height:125px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav{
+   width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+nav ul li{
+  flex: 1;   
+}
+
+nav a {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 5px;
+  border-right: 1px solid #65f884;
+  display: block;
+  font-family: "Fugaz One", sans-serif;
+}
+
+nav a:hover{
+  background-color: #65f884;
+  width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.main-inscripcion {
+    min-height: calc(100vh - 380px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.formulario-container {
+    background-color: #111;
+    border: 2px solid #65f884;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(101, 248, 132, 0.2);
+}
+
+.titulo-formulario {
+    font-family: "Fugaz One", sans-serif;
+    color: #65f884;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.subtitulo-formulario {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.campo-formulario {
+    margin-bottom: 25px;
+}
+
+.campo-formulario label {
+    display: block;
+    color: #65f884;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.opcional {
+    color: #888;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.campo-formulario input,
+.campo-formulario select {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus {
+    outline: none;
+    border-color: #65f884;
+    box-shadow: 0 0 5px rgba(101, 248, 132, 0.5);
+}
+
+.opciones-radio {
+    display: flex;
+    gap: 25px;
+    margin-top: 8px;
+}
+
+.radio-label {
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-label input {
+    width: auto;
+    transform: scale(1.1);
+    accent-color: #65f884;
+}
+
+.botones-formulario {
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.btn-submit,
+.btn-reset {
+    flex: 1;
+    padding: 14px 20px;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-submit {
+    background-color: #65f884;
+    color: black;
+}
+
+.btn-submit:hover {
+    background-color: #4ad86a;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(101, 248, 132, 0.5);
+}
+
+.btn-reset {
+    background-color: #333;
+    color: white;
+    border: 1px solid #65f884;
+}
+
+.btn-reset:hover {
+    background-color: #444;
+    transform: scale(1.02);
+}
+
+.aviso-formulario {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .formulario-container {
+        padding: 25px;
+    }
+    
+    .titulo-formulario {
+        font-size: 24px;
+    }
+    
+    .botones-formulario {
+        flex-direction: column;
+    }
+    
+    .opciones-radio {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #65f884;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+.escudofuenfooter{
+    height: 50px;
+    margin-left: 10px;
+}
+.iglogo{
+    height: 50px;
+    margin-right: 10px;  
+}

@@ -87,37 +87,127 @@ nav a:hover{
   width: 100%;
 }
 
-main {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
-.contenedor {
-    position: relative;
-    width: 30%;
-    min-width: 250px;
-    max-width: 350px;
-    display: inline-block;
-}
-
-.contenedor img {
+.clasificacion {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
 }
 
-.img2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease;
+.titulo-clasificacion {
+    font-family: "Fugaz One", sans-serif;
+    font-size: 45px;
+    color: #65f884;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
-.contenedor:hover .img2 {
-    opacity: 1;
+.tabla-container {
+    width: 90%;
+    max-width: 1200px;
+    overflow-x: auto;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(101, 248, 132, 0.3);
+}
+
+.tabla-clasificacion {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', 'Fugaz One', sans-serif;
+    text-align: center;
+}
+
+.tabla-clasificacion thead tr {
+    background-color: #65f884;
+    color: #000;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 18px;
+}
+
+.tabla-clasificacion th {
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tabla-clasificacion td {
+    padding: 12px 10px;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+}
+
+.tabla-clasificacion tbody tr:hover {
+    background-color: rgba(101, 248, 132, 0.15);
+    transition: 0.3s ease;
+}
+
+.equipo-destacado {
+    background-color: rgba(101, 248, 132, 0.2);
+    border-left: 4px solid #65f884;
+    border-right: 4px solid #65f884;
+}
+
+.equipo-destacado td {
+    font-weight: bold;
+}
+
+.equipo-destacado td:first-child {
+    border-left: none;
+}
+
+.tabla-clasificacion tbody tr:first-child td:first-child {
+    color: gold;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tabla-clasificacion tbody tr:last-child td:first-child {
+    color: #ff4444;
+}
+
+.tabla-clasificacion td:last-child {
+    font-weight: bold;
+}
+
+.tabla-clasificacion tbody tr:first-child td:last-child {
+    color: #65f884;
+}
+
+.tabla-clasificacion tbody tr:nth-child(2) td:last-child,
+.tabla-clasificacion tbody tr:nth-child(3) td:last-child,
+.tabla-clasificacion tbody tr:nth-child(4) td:last-child,
+.tabla-clasificacion tbody tr:nth-child(5) td:last-child {
+    color: #65f884;
+}
+
+.tabla-clasificacion tbody tr:nth-child(6) td:last-child,
+.tabla-clasificacion tbody tr:nth-child(7) td:last-child,
+.tabla-clasificacion tbody tr:nth-child(8) td:last-child,
+.tabla-clasificacion tbody tr:nth-child(9) td:last-child,
+.tabla-clasificacion tbody tr:nth-child(10) td:last-child {
+    color: #ff8888;
+}
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #65f884;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+.escudofuenfooter{
+    height: 50px;
+    margin-left: 10px;
+}
+.iglogo{
+    height: 50px;
+    margin-right: 10px;  
 }

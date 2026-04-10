@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla</title>
-    <link rel="stylesheet" href="../css/proyecto-style.css">
+    <link rel="stylesheet" href="../css/plantilla-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
-<script src="../js/proyecto.js" defer></script>
+<script src="../js/plantilla.js" defer></script>
 </head>
 <body>
  <header>
@@ -22,7 +22,7 @@
         <ul>
             <li><a href="proyecto.html">Inicio</a></li>
             <li><a href="plantilla.html">Plantilla</a></li>
-            <li><a href="#">Inscribirse</a></li>
+            <li><a href="formulario.html">Inscribirse</a></li>
         </ul>
     </nav> 
         </div>
@@ -90,8 +90,27 @@
     <img src="../img/DIEGOR2.jpg" class="img2">
 </div>
 </main> 
-</body>
-<footer>
+ <footer>
+    <img src="../img/escudofuensaldana.png" alt="escudofuen" class="escudofuenfooter"/> 
+    <p>Copyright © 2026 Fuensaldaña FS. Todos los derechos reservados.</p>
+    
+      <a href="https://www.instagram.com/fuensaldanafs/" target="_blank">
+        <img src="../img/ig-logo.png" alt="iglogo" class="iglogo"/>
+    </a>
+</footer> 
 
-</footer>
+<div id="modalJugador" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <span class="cerrar-modal">&times;</span>
+            <h2>Información del Jugador</h2>
+        </div>
+        <div class="modal-body">
+            <p><strong>Nombre:</strong> <span id="modal-nombre"></span></p>
+            <p><strong>Goles:</strong> <span id="modal-goles"></span></p>
+            <p><strong>Asistencias:</strong> <span id="modal-asistencias"></span></p>
+        </div>
+    </div>
+</div>
+</body>
 </html>
